@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de Mémorisation - Personnalités Célèbres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Jeu de Mémorisation</h1>
+    
+    <div class="memorization-notice" id="memorization-notice">
+      ⏳ Mémorisez les positions des personnalités - Temps restant: <span id="memorization-time">60</span>s
+    </div>
+
+    <div class="game-info">
+      <div class="timer">Temps: <span id="time">60</span>s</div>
+      <div class="current-name">Trouvez: <span id="current-person">-</span></div>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+
+    <div class="cards-grid" id="cards-container">
+      <!-- Les cartes seront générées par JavaScript -->
+    </div>
+  </div>
+
+  <div class="game-over" id="game-over">
+    <div class="game-over-content">
+      <h2>Partie Terminée!</h2>
+      <p>Votre score final:</p>
+      <div class="final-score" id="final-score">0</div>
+      <p id="performance-message"></p>
+      <button id="restart-button">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
